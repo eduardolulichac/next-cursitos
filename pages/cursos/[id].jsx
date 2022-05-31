@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { useRouter } from "next/router";
@@ -9,7 +8,7 @@ import { useCurso } from "../../hooks/useCurso";
 
 import firebase from "../../firebase";
 
-const curso = ({ curso }) => {
+const Curso = ({ curso }) => {
   const router = useRouter();
   const {
     query: { id },
@@ -173,7 +172,7 @@ const curso = ({ curso }) => {
   );
 };
 
-export default curso;
+export default Curso;
 
 export async function getServerSideProps(context) {
   const { params } = context;

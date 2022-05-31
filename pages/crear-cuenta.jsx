@@ -14,15 +14,13 @@ const intialState = {
   password: "",
 };
 
-const crearCuenta = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const CrearCuenta = () => {
   const [valores, errores, handleChange, handleSubmit] = useValidation(
     intialState,
     validarCrearCuenta,
     () => crearCuenta()
   );
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { crear } = useContext(AuthContext);
 
   const crearCuenta = () => {
@@ -82,4 +80,4 @@ const crearCuenta = () => {
   );
 };
 
-export default crearCuenta;
+export default CrearCuenta;

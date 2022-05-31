@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useContext, useState } from "react";
 import Router from "next/router";
 import Layout from "../Layout";
@@ -19,8 +18,7 @@ const intialState = {
   descripcion: "",
 };
 
-const nuevoCurso = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const NuevoCurso = () => {
   const [nombreImage, setNombreImagen] = useState("");
   const [urlImage, setUrlImage] = useState(null);
   const [loadingUpImage, setLoadingUpImage] = useState(null);
@@ -175,4 +173,4 @@ const nuevoCurso = () => {
   );
 };
 
-export default nuevoCurso;
+export default NuevoCurso;
