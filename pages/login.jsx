@@ -12,14 +12,17 @@ const intialState = {
 };
 
 const login = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [valores, errores, handleChange, handleSubmit] = useValidation(
     intialState,
     validarLogin,
     () => iniciarSesion()
   );
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { iniciar } = useContext(AuthContext);
 
   const iniciarSesion = async () => {

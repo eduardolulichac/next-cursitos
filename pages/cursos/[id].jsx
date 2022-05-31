@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { useRouter } from "next/router";
@@ -105,6 +106,7 @@ const curso = ({ curso }) => {
                 <a
                   href={url}
                   target="_blank"
+                  rel="noreferrer"
                   type="button"
                   className="btn btn-info"
                 >

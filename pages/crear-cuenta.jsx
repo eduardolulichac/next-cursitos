@@ -15,12 +15,14 @@ const intialState = {
 };
 
 const crearCuenta = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [valores, errores, handleChange, handleSubmit] = useValidation(
     intialState,
     validarCrearCuenta,
     () => crearCuenta()
   );
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { crear } = useContext(AuthContext);
 
   const crearCuenta = () => {
